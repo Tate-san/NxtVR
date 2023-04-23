@@ -15,8 +15,8 @@
     HID_COLLECTION ( HID_COLLECTION_PHYSICAL       )        ,\
    /* Accel, Gyroscope and Magnetometer (min -2147483647, max 2147483647) */ \
     HID_USAGE_PAGE   ( HID_USAGE_PAGE_DESKTOP                 ) ,\
-    HID_LOGICAL_MIN_N  ( 0x7FFFFFFF, 3                        ) ,\
-    HID_LOGICAL_MAX_N  ( 0x80000000, 3                        ) ,\
+    HID_LOGICAL_MIN_N  ( 0x80000000, 3                        ) ,\
+    HID_LOGICAL_MAX_N  ( 0x7FFFFFFF, 3                        ) ,\
     HID_USAGE        ( HID_USAGE_DESKTOP_X                    ) ,\
     HID_USAGE        ( HID_USAGE_DESKTOP_Y                    ) ,\
     HID_USAGE        ( HID_USAGE_DESKTOP_Z                    ) ,\
