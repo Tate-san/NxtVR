@@ -25,7 +25,7 @@
 
 #ifndef _TUSB_CONFIG_H_
 #define _TUSB_CONFIG_H_
-#define REPORT_ID 0x01
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -91,4 +91,3 @@ extern "C" {
 #endif
 
 #endif /* _TUSB_CONFIG_H_ */
-

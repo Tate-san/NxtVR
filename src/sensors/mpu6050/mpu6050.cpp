@@ -23,7 +23,7 @@ void MPU6050::configure(int16_t *bias)
    }
 
 }
-void MPU6050::readAccel(int16_t *accel)
+void MPU6050::readAccel()
 {
    uint8_t data[6];
    uint8_t val = MPU6050_ACCEL_X;
@@ -35,7 +35,7 @@ void MPU6050::readAccel(int16_t *accel)
    }
 }
 
-void MPU6050::readGyro(int16_t *gyro)
+void MPU6050::readGyro()
 {
    uint8_t data[6];
    uint8_t val = MPU6050_GYRO_X;
@@ -46,5 +46,3 @@ void MPU6050::readGyro(int16_t *gyro)
       gyro[i] = (data[i*2] << 8 | data[(i*2) + 1]);
    }
 }
-
-

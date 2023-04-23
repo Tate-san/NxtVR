@@ -1,7 +1,3 @@
 # Custom
 .vscode/
-./NxtVR_sketch/build
-NxtVR_sketch/build/
-Nxtvr_pico/build
-Nxtvr_pico/.cache
-Nxtvr_pico/compile_commands.json
+src/build

@@ -23,12 +23,12 @@
  * achieved.
 */
 
-#define OFFSET_AX 
-#define OFFSET_AY 
-#define OFFSET_AZ 
-#define OFFSET_GX 
-#define OFFSET_GY 
-#define OFFSET_GZ 
+#define OFFSET_AX 1
+#define OFFSET_AY 1
+#define OFFSET_AZ 1
+#define OFFSET_GX 1
+#define OFFSET_GY 1
+#define OFFSET_GZ 1
 
 
 #define MPU6050_GYRO_CONFIG 0x1B
@@ -36,16 +36,13 @@
 #define I2C_PORT i2c0
 
 #include "hardware/i2c.h"
+#include <sensors/sensor.h> 
 
-class MPU6050
+class MPU6050 : public Sensor
 {
    public:
-      int16_t temp;
-      int16_t accel[3];
-      int16_t gyro[3];
-      
-      void begin();
+      void begin() override;
       void configure(int16_t *bias);
-      void readAccel(int16_t *accel);
-      void readGyro(int16_t *gyro);
+      void readAccel() override;
+      void readGyro() override;
 };
